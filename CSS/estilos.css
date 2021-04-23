@@ -78,8 +78,17 @@ button{margin-top: 40px;
     margin: 20px;
 }
 
+.cardsdos{
+    text-align: center;
+    padding: 10px;
+}
+
 .icono{
-    justify-self: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    
+    
 }
 
 

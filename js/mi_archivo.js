@@ -424,6 +424,7 @@ $("#confirmar").click(function(){
     
    });
 
+/*Destino CABA 02--Transporte 8*/
 $("#confirmar").click(function(){
     
     if ((($("#destino option:selected").val()==02) ) && ($("#modalidad").val())=="Palletizado" && (($("#toneladas").val())<="30") ){
