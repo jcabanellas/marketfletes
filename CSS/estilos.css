@@ -1,0 +1,83 @@
+
+body{background-color:#FFB54F;
+    color:#2F4858;
+    font-family: 'Ubuntu', sans-serif;}
+
+header{
+    text-align: center;
+    background-color: #2F4858;
+    color: white;
+    padding: 20px;
+}
+
+
+.estiloparrafo{
+    text-align: center;
+    font-size: large;
+    text-transform: uppercase;
+    
+}
+
+.mi_lista{
+    list-style-type:none;
+}
+
+.sinestilo{
+    text-decoration: none;
+    color:darkblue ;
+    margin: 20px;
+}
+a:link{text-decoration: none;}
+
+button{margin-top: 40px;
+}
+
+.alternativas{
+    margin: 20px;
+    
+}
+
+.claseblock{
+    background-color: white;
+    color: blue;
+    height: 200px;
+}
+
+.titulodador{
+    font-size: large;
+    margin-top: 20px;
+    text-transform:uppercase;
+    text-align: center;
+    color: darkblue ;
+}
+
+.subtitulo{
+    font-size: x-large;
+}
+
+.campo{
+  margin-left: 20px;
+}
+
+.cnegativa{
+    text-align: center;
+    padding: 20px;
+    margin: 20px;
+    color: orange;
+}
+
+.cards{
+    background-color: #116671;
+    margin: 20px;
+    color: white;
+}
+
+.cardsuna{
+    margin: auto;
+}
+
+.icono{
+    justify-self: center;
+}
+
+
