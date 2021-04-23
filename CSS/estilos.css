@@ -5,7 +5,7 @@ body{background-color:#FFB54F;
 
 header{
     text-align: center;
-    background-color: #2F4858;
+    background-color: #116671;
     color: white;
     padding: 20px;
 }
@@ -68,12 +68,14 @@ button{margin-top: 40px;
 
 .cards{
     background-color: #116671;
-    margin: 20px;
+    margin:auto;
+    height: 30vh;
     color: white;
+    
 }
 
 .cardsuna{
-    margin: auto;
+    margin: 20px;
 }
 
 .icono{
