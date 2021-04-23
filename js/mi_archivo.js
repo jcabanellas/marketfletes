@@ -424,6 +424,27 @@ $("#confirmar").click(function(){
     
    });
 
+$("#confirmar").click(function(){
+    
+    if ((($("#destino option:selected").val()==02) ) && ($("#modalidad").val())=="Palletizado" && (($("#toneladas").val())<="30") ){
+                 console.log(transporte_4.nombre)
+                $("#resultado").append(`<ul><li>"${transporte_8.nombre}"</li></ul>`);
+                $("#rtdopuntaje").append(`<ul><li>"${transporte_8.puntaje}"</li></ul>`);
+                $("#rtdowhats").append(`<ul><li>"${transporte_8.whatsapp}"</li></ul>`);
+                }
+                
+    else if ((($("#destino option:selected").val()==02) ) && ($("#modalidad").val())=="Palletizado" && (($("#toneladas").val())>"30") ){
+                $("#negativa").append(`<p>${transporte_8.nombre} está disponible pero no carga más de 30 toneladas. Si quieres avanzar, modifica la búsqueda.</p>`);
+             }
+
+    else if ((($("#destino option:selected").val()==02) ) && ($("#modalidad").val())=="Granel" ){
+            $("#negativa").append(`<p>${transporte_8.nombre} carga para tu destino pero sólo en modalidad Palletizado. Si quieres avanzar, modifica la búsqueda.</p>`);
+            }
+             
+    
+   });
+
+
         
 
    
