@@ -12,18 +12,11 @@ class transportes{
     this.whatsapp=whatsapp;
     this.disponible=disponible;
 }
-    destinoSantaFe=function() {
-        if(destino="Santafe"){
-        console.log(nombre)
-        }
-    }
-    destinoCordoba=function() {
-        if(destino="Cordoba"){
-            console.log(nombre)
-        }
-    }                   
     
-}
+    
+                     
+    
+};
 
 var transporte_1= new transportes("Transporte Ramirez",["Santa fe","Cordoba","Misiones","Entre Rios"], "30tn", 7,"Granel","+5493416444444", "si");
 var transporte_2= new transportes("Transporte Gabriel", ["Santa Fe","Buenos Aires","La Pampa"], "30 tn", 8, "Palletizado","+54340222222");
@@ -46,20 +39,8 @@ class dadores{
 };
 
 
-var dador_1=new dadores("Avícola Perez", "Santa fe", 7);
-console.log(dador_1);
 
-/*Combinaremos las clase transporte con clase dador*/
 
-getEncuentro=function (params) {
-    if (dador_1.destino=transporte_1.destino) {
-        console.log(transporte_1.nombre);
-        console.log(dador_1.nombre);
-        
-    }
-    
-};
-getEncuentro();
 
 
 
@@ -148,10 +129,7 @@ console.log(resultadoJSON["resultados"]);
 
 /*Incorporamos J query*/
 
-$("#destino").change(function(){
-   alert("Destino Cordoba solicita documentacion especial. Buenos Aires y Santa Fe normal");
-    }
-    );
+
 
 
 $("#confirmar").click(function(){
@@ -227,6 +205,8 @@ $(document).ready(function(){
         for (const provincia of datos.provincias){
             $("#selectProvincias").append(`<option value="${provincia.id}">${provincia.nombre}</option>`)
         }
+        
+        
     });
 
 });
@@ -258,29 +238,7 @@ $(document).ready(function(){
 });
 
 
-/*Empezamos a buscar resultados*/
 
-$("#confirmar").click(function(){
-    {if (($("#modalidad").val())=="Granel")
-    console.log(transporte_1.nombre)}
-});
-
-$("#confirmar").click(function(){
-    {if (($("#toneladas").val())<="30")
-    console.log(transporte_1.nombre)}
-});
-
-$("#confirmar").click(function(){
-    {if ($("#destino option:selected").val()==14)
-    console.log(transporte_1.nombre)}
-}
-);
-
-$("#confirmar").click(function(){
-    {if ($("#destino option:selected").val()==14)
-    console.log(transportes[2])}
-}
-);
 
 
 
@@ -290,7 +248,7 @@ $("#confirmar").click(function(){
 $("#confirmar").click(function(){
     if ((($("#destino option:selected").val()==14) ||($("#destino option:selected").val()==54)||($("#destino option:selected").val()==30) ||($("#destino option:selected").val()==82)  ) && ($("#modalidad").val())=="Granel" && (($("#toneladas").val())<="30") ){
 
-        console.log(transporte_1.nombre)
+        
         $("#resultado").append(`<ul><li>"${transporte_1.nombre}"</li></ul>`);
         $("#rtdopuntaje").append(`<ul><li>"${transporte_1.puntaje}"</li></ul>`);
         $("#rtdowhats").append(`<ul><li>"${transporte_1.whatsapp}"</li></ul>`);
@@ -308,7 +266,7 @@ $("#confirmar").click(function(){
 /* Destino Bs As, Santa Fe y La Pampa -- Transporte 2*/ 
 $("#confirmar").click(function(){
     if ((($("#destino option:selected").val()==06) ||($("#destino option:selected").val()==82)||($("#destino option:selected").val()==42)) && ($("#modalidad").val())=="Palletizado" && (($("#toneladas").val())<="30") ){
-        console.log(transporte_2.nombre)
+        
         $("#resultado").append(`<ul><li>"${transporte_2.nombre}"</li></ul>`);
         $("#rtdopuntaje").append(`<ul><li>"${transporte_2.puntaje}"</li></ul>`);
         $("#rtdowhats").append(`<ul><li>"${transporte_2.whatsapp}"</li></ul>`);
@@ -325,7 +283,7 @@ $("#confirmar").click(function(){
 /*Destino San Luis, San Juan y Mendoza -- Transporte 3 */
 $("#confirmar").click(function(){
     if ((($("#destino option:selected").val()==74) ||($("#destino option:selected").val()==70)||($("#destino option:selected").val()==50)) && ($("#modalidad").val())=="Palletizado" && (($("#toneladas").val())<="30") ){
-            console.log(transporte_3.nombre)
+            
             $("#resultado").append(`<ul><li>"${transporte_3.nombre}"</li></ul>`);
             $("#rtdopuntaje").append(`<ul><li>"${transporte_3.puntaje}"</li></ul>`);
             $("#rtdowhats").append(`<ul><li>"${transporte_3.whatsapp}"</li></ul>`);
@@ -345,7 +303,7 @@ $("#confirmar").click(function(){
 $("#confirmar").click(function(){
     
     if ((($("#destino option:selected").val()==82)) && ($("#modalidad").val())=="Palletizado" && (($("#toneladas").val())<="30") ){
-                console.log(transporte_4.nombre)
+                
                 $("#resultado").append(`<ul><li>"${transporte_4.nombre}"</li></ul>`);
                 $("#rtdopuntaje").append(`<ul><li>"${transporte_4.puntaje}"</li></ul>`);
                 $("#rtdowhats").append(`<ul><li>"${transporte_4.whatsapp}"</li></ul>`);
@@ -364,7 +322,7 @@ $("#confirmar").click(function(){
  $("#confirmar").click(function(){
     
     if ((($("#destino option:selected").val()==78) || ($("#destino option:selected").val()==62) || ($("#destino option:selected").val()==26) || ($("#destino option:selected").val()==58) ) && ($("#modalidad").val())=="Palletizado" && (($("#toneladas").val())<="30") ){
-                 console.log(transporte_4.nombre)
+                
                 $("#resultado").append(`<ul><li>"${transporte_5.nombre}"</li></ul>`);
                 $("#rtdopuntaje").append(`<ul><li>"${transporte_5.puntaje}"</li></ul>`);
                 $("#rtdowhats").append(`<ul><li>"${transporte_5.whatsapp}"</li></ul>`);
@@ -386,7 +344,7 @@ $("#confirmar").click(function(){
 $("#confirmar").click(function(){
     
     if ((($("#destino option:selected").val()==66) || ($("#destino option:selected").val()==38) || ($("#destino option:selected").val()==90) ) && ($("#modalidad").val())=="Palletizado" && (($("#toneladas").val())<="30") ){
-                 console.log(transporte_4.nombre)
+               
                 $("#resultado").append(`<ul><li>"${transporte_6.nombre}"</li></ul>`);
                 $("#rtdopuntaje").append(`<ul><li>"${transporte_6.puntaje}"</li></ul>`);
                 $("#rtdowhats").append(`<ul><li>"${transporte_6.whatsapp}"</li></ul>`);
@@ -407,7 +365,7 @@ $("#confirmar").click(function(){
 $("#confirmar").click(function(){
     
     if ((($("#destino option:selected").val()==22) || ($("#destino option:selected").val()==34)  ) && ($("#modalidad").val())=="Palletizado" && (($("#toneladas").val())<="30") ){
-                 console.log(transporte_4.nombre)
+                 
                 $("#resultado").append(`<ul><li>"${transporte_7.nombre}"</li></ul>`);
                 $("#rtdopuntaje").append(`<ul><li>"${transporte_7.puntaje}"</li></ul>`);
                 $("#rtdowhats").append(`<ul><li>"${transporte_7.whatsapp}"</li></ul>`);
@@ -428,7 +386,7 @@ $("#confirmar").click(function(){
 $("#confirmar").click(function(){
     
     if ((($("#destino option:selected").val()==02) ) && ($("#modalidad").val())=="Palletizado" && (($("#toneladas").val())<="30") ){
-                 console.log(transporte_4.nombre)
+                 
                 $("#resultado").append(`<ul><li>"${transporte_8.nombre}"</li></ul>`);
                 $("#rtdopuntaje").append(`<ul><li>"${transporte_8.puntaje}"</li></ul>`);
                 $("#rtdowhats").append(`<ul><li>"${transporte_8.whatsapp}"</li></ul>`);
@@ -445,8 +403,36 @@ $("#confirmar").click(function(){
     
    });
 
-
+/*Destinos sin transporte*/
+$("#confirmar").click(function(){
+    
+    if ((($("#destino option:selected").val()!=02)) &&
+        (($("#destino option:selected").val()!=22)) &&
+        (($("#destino option:selected").val()!=34)) &&
+        (($("#destino option:selected").val()!=66)) &&
+        (($("#destino option:selected").val()!=38)) &&
+        (($("#destino option:selected").val()!=90)) &&
+        (($("#destino option:selected").val()!=78)) &&
+        (($("#destino option:selected").val()!=62)) &&
+        (($("#destino option:selected").val()!=26)) &&
+        (($("#destino option:selected").val()!=58)) &&
+        (($("#destino option:selected").val()!=82)) &&
+        (($("#destino option:selected").val()!=74)) &&
+        (($("#destino option:selected").val()!=70)) &&
+        (($("#destino option:selected").val()!=50)) &&
+        (($("#destino option:selected").val()!=06)) &&
+        (($("#destino option:selected").val()!=42)) &&
+        (($("#destino option:selected").val()!=14)) &&
+        (($("#destino option:selected").val()!=54)) &&
+        (($("#destino option:selected").val()!=30)) 
+    
+    
+        ){
+        $("#negativa").append(`<p>Lo sentimos. Aún no hay transportes registrados para tu provincia. Esperamos pronto poder ayudarte!</p>`)
+                }
         
+
+            });  
 
    
 $("#confirmar").click(function(){    
@@ -471,7 +457,13 @@ $("#nuevabusqueda").click(function() {
     
 });
 
-
+$("#destino").change(function(){
+    
+    if ($("#destino option:selected").val()==14){
+        alert("")
+    }
+    }
+    );
 
     
 
