@@ -460,7 +460,7 @@ $("#nuevabusqueda").click(function() {
 $("#destino").change(function(){
     
     if ($("#destino option:selected").val()==14){
-        alert("")
+        alert("Cordoba: solicita certificado circulación")
     }
     }
     );
